@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="1000.0" prefWidth="900.0" style="-fx-background-color: white;" xmlns:fx="http://javafx.com/fxml" fx:controller="ABIKO.receipt.receiptController">
+   <children>
+      <JFXButton fx:id="homeBtn" buttonType="RAISED" layoutX="236.0" layoutY="900.0" onAction="#goHome" ripplerFill="black" style="-fx-background-color: #efbd1e;" text="HOME">
+         <font>
+            <Font size="24.0" style="-fx-text-fill: white;" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="260.0" fitWidth="300.0" layoutX="300.0" layoutY="400.0" pickOnBounds="true">
+         <image>
+            <Image url="/Order/resources/images/receipt.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="150.0" layoutX="375.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="/Order/resources/images/AbikoLogo.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="260.0" layoutY="200.0" text="Order complete!">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label id="orderNum" layoutX="260.0" layoutY="300.0" />
+      <JFXButton fx:id="receiptBtn" buttonType="RAISED" layoutX="536.0" layoutY="900.0" prefWidth="128.0" ripplerFill="BLACK" style="-fx-background-color: #efbd1e;" text="RECEIPT" onAction="#openReceipt">
+         <font>
+            <Font size="24.0" style="-fx-text-fill: white;" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

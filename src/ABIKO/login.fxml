@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="loginDialog" prefHeight="300.0" prefWidth="300.0" xmlns:fx="http://javafx.com/fxml" fx:controller="ABIKO.loginController">
+	<children>
+		<Button fx:id="loginBtn" layoutX="114.0" layoutY="220.0" mnemonicParsing="false" text="Login" onAction="#login">
+			<font>
+				<Font size="18.0" />
+			</font>
+		</Button>
+		<TextField fx:id="txtUserName" layoutX="48.0" layoutY="105.0" promptText="UserName">
+			<font>
+            	<Font size="18.0" />
+       		</font>
+		</TextField>
+		<PasswordField fx:id="txtPassword" layoutX="48.0" layoutY="150.0" promptText="Password">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </PasswordField>
+      <Label fx:id="lblStatus" alignment="CENTER" layoutY="35.0" prefHeight="19.0" prefWidth="300.0" text="Status" textFill="#d31c1c">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+	</children>
+</AnchorPane>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="1000.0" prefWidth="700.0" xmlns:fx="http://javafx.com/fxml" fx:controller="ABIKO.waitController">
+   <children>
+      <ImageView fx:id="waitImage" fitHeight="900.0" fitWidth="700.0" layoutX="35.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Order/resources/images/waitImage.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="134.5" layoutY="925.0" text="주문하시려면 클릭하세요">
+         <font>
+            <Font size="38.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
