@@ -1,0 +1,1661 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="1000.0" prefWidth="900.0" xmlns:fx="http://javafx.com/fxml" fx:controller="ABIKO.Controller">
+	<children>
+		<HBox>
+			<children>
+				<JFXTabPane fx:id="tabContainer" prefHeight="1000.0" prefWidth="580.0" side="LEFT" style="-fx-background-color: white;" tabClosingPolicy="UNAVAILABLE">
+					<tabs>
+						<Tab fx:id="curryTab" closable="false" style="-fx-font-family: sans-serif;">
+							<content>
+								<VBox prefHeight="1000.0" prefWidth="580.0">
+									<children>
+										<HBox prefHeight="200.0" prefWidth="200.0" spacing="0.0">
+											<children>
+												<VBox alignment="CENTER" prefHeight="215.0" prefWidth="170.0">
+													<HBox.margin>
+														<Insets left="5.0" />
+													</HBox.margin>
+													<children>
+														<ImageView fx:id="curry001img" fitHeight="200.0" fitWidth="130.0" pickOnBounds="true" preserveRatio="true">
+															<image>
+																<Image url="@../Order/resources/images/menu/curry/curryPlain.jpg" />
+															</image>
+															<VBox.margin>
+																<Insets top="5.0" />
+															</VBox.margin>
+														</ImageView>
+														<Label alignment="CENTER" lineSpacing="2.0" prefHeight="44.0" prefWidth="200.0" text="Curry Plain" textAlignment="CENTER" wrapText="true">
+															<padding>
+																<Insets bottom="5.0" />
+															</padding>
+														</Label>
+														<HBox alignment="CENTER" prefHeight="27.0" prefWidth="200.0">
+															<children>
+																<JFXButton fx:id="curry001remove" alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" prefHeight="22.0" prefWidth="22.0">
+																	<graphic>
+																		<ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+																			<image>
+																				<Image url="Order/resources/images/icon/remove.png" />
+																			</image>
+																		</ImageView>
+																	</graphic>
+																</JFXButton>
+																<Label fx:id="curry001count" alignment="CENTER" prefHeight="39.0" prefWidth="25.0" text="0" textAlignment="CENTER" />
+																<JFXButton fx:id="curry001add" alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="10.0" layoutY="10.0" prefHeight="32.0" prefWidth="35.0">
+																	<graphic>
+																		<ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+																			<image>
+																				<Image url="Order/resources/images/icon/add.png" />
+																			</image>
+																		</ImageView>
+																	</graphic>
+																</JFXButton>
+															</children>
+															<VBox.margin>
+																<Insets />
+															</VBox.margin>
+														</HBox>
+													</children>
+												</VBox>
+												<VBox alignment="CENTER" prefHeight="200.0" prefWidth="170.0">
+													<children>
+														<ImageView fx:id="curry002img" fitHeight="200.0" fitWidth="130.0" pickOnBounds="true" preserveRatio="true">
+															<image>
+																<Image url="@../Order/resources/images/menu/curry/vegetableCurry.jpg" />
+															</image>
+															<VBox.margin>
+																<Insets top="5.0" />
+															</VBox.margin>
+														</ImageView>
+														<Label alignment="CENTER" lineSpacing="2.0" prefHeight="44.0" prefWidth="200.0" text="Vegetable Curry" textAlignment="CENTER" wrapText="true">
+															<padding>
+																<Insets bottom="5.0" />
+															</padding>
+														</Label>
+														<HBox alignment="CENTER" prefHeight="27.0" prefWidth="200.0">
+															<children>
+																<JFXButton fx:id="curry002remove" alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" prefHeight="22.0" prefWidth="22.0">
+																	<graphic>
+																		<ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+																			<image>
+																				<Image url="Order/resources/images/icon/remove.png" />
+																			</image>
+																		</ImageView>
+																	</graphic>
+																</JFXButton>
+																<Label fx:id="curry002count" alignment="CENTER" prefHeight="39.0" prefWidth="35.0" text="0" textAlignment="CENTER" />
+																<JFXButton fx:id="curry002add" alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="10.0" layoutY="10.0" prefHeight="32.0" prefWidth="35.0">
+																	<graphic>
+																		<ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+																			<image>
+																				<Image url="Order/resources/images/icon/add.png" />
+																			</image>
+																		</ImageView>
+																	</graphic>
+																</JFXButton>
+															</children>
+														</HBox>
+													</children>
+                                       <opaqueInsets>
+                                          <Insets left="5.0" />
+                                       </opaqueInsets>
+												</VBox>
+												<VBox alignment="CENTER" prefHeight="215.0" prefWidth="170.0">
+													<HBox.margin>
+														<Insets left="5.0" />
+													</HBox.margin>
+													<children>
+														<ImageView fx:id="curry003img" fitHeight="200.0" fitWidth="130.0" pickOnBounds="true" preserveRatio="true">
+															<image>
+																<Image url="@../Order/resources/images/menu/curry/eggplantCurry.jpg" />
+															</image>
+															<VBox.margin>
+																<Insets top="5.0" />
+															</VBox.margin>
+														</ImageView>
+														<Label alignment="CENTER" lineSpacing="2.0" prefHeight="44.0" prefWidth="200.0" text="Eggplant Curry" textAlignment="CENTER" wrapText="true">
+															<padding>
+																<Insets bottom="5.0" />
+															</padding>
+														</Label>
+														<HBox alignment="CENTER" prefHeight="27.0" prefWidth="200.0">
+															<children>
+																<JFXButton fx:id="curry003remove" alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" prefHeight="22.0" prefWidth="22.0">
+																	<graphic>
+																		<ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+																			<image>
+																				<Image url="Order/resources/images/icon/remove.png" />
+																			</image>
+																		</ImageView>
+																	</graphic>
+																</JFXButton>
+																<Label fx:id="curry003count" alignment="CENTER" prefHeight="39.0" prefWidth="25.0" text="0" textAlignment="CENTER" />
+																<JFXButton fx:id="curry003add" alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="10.0" layoutY="10.0" prefHeight="32.0" prefWidth="35.0">
+																	<graphic>
+																		<ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+																			<image>
+																				<Image url="Order/resources/images/icon/add.png" />
+																			</image>
+																		</ImageView>
+																	</graphic>
+																</JFXButton>
+															</children>
+															<VBox.margin>
+																<Insets />
+															</VBox.margin>
+														</HBox>
+													</children>
+												</VBox>
+											</children>
+											<VBox.margin>
+												<Insets bottom="10.0" top="40.0" />
+											</VBox.margin>
+										</HBox>
+										<HBox layoutX="0.0" prefHeight="200.0" prefWidth="200.0">
+											<children>
+												<VBox alignment="CENTER" prefHeight="200.0" prefWidth="170.0">
+													<HBox.margin>
+														<Insets left="5.0" />
+													</HBox.margin>
+													<children>
+														<ImageView fx:id="curry004img" fitHeight="200.0" fitWidth="130.0" pickOnBounds="true" preserveRatio="true">
+															<image>
+																<Image url="@../Order/resources/images/menu/curry/mushroomCurry.jpg" />
+															</image>
+															<VBox.margin>
+																<Insets top="5.0" />
+															</VBox.margin>
+														</ImageView>
+														<Label alignment="CENTER" lineSpacing="2.0" prefHeight="44.0" prefWidth="200.0" text="Mushroom Curry" textAlignment="CENTER" wrapText="true">
+															<padding>
+																<Insets bottom="5.0" />
+															</padding>
+														</Label>
+														<HBox alignment="CENTER" prefHeight="27.0" prefWidth="200.0">
+															<children>
+																<JFXButton fx:id="curry004remove" alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" prefHeight="22.0" prefWidth="22.0">
+																	<graphic>
+																		<ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+																			<image>
+																				<Image url="Order/resources/images/icon/remove.png" />
+																			</image>
+																		</ImageView>
+																	</graphic>
+																</JFXButton>
+																<Label fx:id="curry004count" alignment="CENTER" prefHeight="39.0" prefWidth="35.0" text="0" textAlignment="CENTER" />
+																<JFXButton fx:id="curry004add" alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="10.0" layoutY="10.0" prefHeight="32.0" prefWidth="35.0">
+																	<graphic>
+																		<ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+																			<image>
+																				<Image url="Order/resources/images/icon/add.png" />
+																			</image>
+																		</ImageView>
+																	</graphic>
+																</JFXButton>
+															</children>
+														</HBox>
+													</children>
+												</VBox>
+												<VBox alignment="CENTER" prefHeight="200.0" prefWidth="170.0">
+													<children>
+														<ImageView fx:id="curry005img" fitHeight="200.0" fitWidth="130.0" pickOnBounds="true" preserveRatio="true">
+															<image>
+																<Image url="@../Order/resources/images/menu/curry/chickenCurry.jpg" />
+															</image>
+															<VBox.margin>
+																<Insets top="5.0" />
+															</VBox.margin>
+														</ImageView>
+														<Label alignment="CENTER" lineSpacing="2.0" prefHeight="44.0" prefWidth="200.0" text="Chicken Curry" textAlignment="CENTER" wrapText="true">
+															<padding>
+																<Insets bottom="5.0" />
+															</padding>
+														</Label>
+														<HBox alignment="CENTER" prefHeight="27.0" prefWidth="200.0">
+															<children>
+																<JFXButton fx:id="curry005remove" alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" prefHeight="22.0" prefWidth="22.0">
+																	<graphic>
+																		<ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+																			<image>
+																				<Image url="Order/resources/images/icon/remove.png" />
+																			</image>
+																		</ImageView>
+																	</graphic>
+																</JFXButton>
+																<Label fx:id="curry005count" alignment="CENTER" prefHeight="39.0" prefWidth="35.0" text="0" textAlignment="CENTER" />
+																<JFXButton fx:id="curry005add" alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="10.0" layoutY="10.0" prefHeight="32.0" prefWidth="35.0">
+																	<graphic>
+																		<ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+																			<image>
+																				<Image url="Order/resources/images/icon/add.png" />
+																			</image>
+																		</ImageView>
+																	</graphic>
+																</JFXButton>
+															</children>
+														</HBox>
+													</children>
+                                       <opaqueInsets>
+                                          <Insets left="5.0" />
+                                       </opaqueInsets>
+												</VBox>
+												<VBox alignment="CENTER" prefHeight="200.0" prefWidth="170.0">
+													<children>
+														<ImageView fx:id="curry006img" fitHeight="200.0" fitWidth="130.0" pickOnBounds="true" preserveRatio="true">
+															<image>
+																<Image url="@../Order/resources/images/menu/curry/porkCurry.jpg" />
+															</image>
+															<VBox.margin>
+																<Insets top="5.0" />
+															</VBox.margin>
+														</ImageView>
+														<Label alignment="CENTER" lineSpacing="2.0" prefHeight="44.0" prefWidth="200.0" text="Pork Curry" textAlignment="CENTER" wrapText="true">
+															<padding>
+																<Insets bottom="5.0" />
+															</padding>
+														</Label>
+														<HBox alignment="CENTER" prefHeight="27.0" prefWidth="200.0">
+															<children>
+																<JFXButton fx:id="curry006remove" alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" prefHeight="22.0" prefWidth="22.0">
+																	<graphic>
+																		<ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+																			<image>
+																				<Image url="Order/resources/images/icon/remove.png" />
+																			</image>
+																		</ImageView>
+																	</graphic>
+																</JFXButton>
+																<Label fx:id="curry006count" alignment="CENTER" prefHeight="39.0" prefWidth="35.0" text="0" textAlignment="CENTER" />
+																<JFXButton fx:id="curry006add" alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="10.0" layoutY="10.0" prefHeight="32.0" prefWidth="35.0">
+																	<graphic>
+																		<ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+																			<image>
+																				<Image url="Order/resources/images/icon/add.png" />
+																			</image>
+																		</ImageView>
+																	</graphic>
+																</JFXButton>
+															</children>
+														</HBox>
+													</children>
+                                       <opaqueInsets>
+                                          <Insets left="5.0" />
+                                       </opaqueInsets>
+												</VBox>
+											</children>
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" top="10.0" />
+                                 </VBox.margin>
+										</HBox>
+										<HBox layoutX="0.0" prefHeight="200.0" prefWidth="200.0">
+											<children>
+												<VBox alignment="CENTER" prefHeight="200.0" prefWidth="170.0">
+													<children>
+														<ImageView fx:id="curry007img" fitHeight="200.0" fitWidth="130.0" pickOnBounds="true" preserveRatio="true">
+															<image>
+																<Image url="@../Order/resources/images/menu/curry/hamburgCurry.jpg" />
+															</image>
+															<VBox.margin>
+																<Insets top="5.0" />
+															</VBox.margin>
+														</ImageView>
+														<Label alignment="CENTER" lineSpacing="2.0" prefHeight="44.0" prefWidth="200.0" text="Hamburg Curry" textAlignment="CENTER" wrapText="true">
+															<padding>
+																<Insets bottom="5.0" />
+															</padding>
+														</Label>
+														<HBox alignment="CENTER" prefHeight="27.0" prefWidth="200.0">
+															<children>
+																<JFXButton fx:id="curry007remove" alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" prefHeight="22.0" prefWidth="22.0">
+																	<graphic>
+																		<ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+																			<image>
+																				<Image url="Order/resources/images/icon/remove.png" />
+																			</image>
+																		</ImageView>
+																	</graphic>
+																</JFXButton>
+																<Label fx:id="curry007count" alignment="CENTER" prefHeight="39.0" prefWidth="35.0" text="0" textAlignment="CENTER" />
+																<JFXButton fx:id="curry007add" alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="10.0" layoutY="10.0" prefHeight="32.0" prefWidth="35.0">
+																	<graphic>
+																		<ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+																			<image>
+																				<Image url="Order/resources/images/icon/add.png" />
+																			</image>
+																		</ImageView>
+																	</graphic>
+																</JFXButton>
+															</children>
+														</HBox>
+													</children>
+												</VBox>
+												<VBox alignment="CENTER" prefHeight="200.0" prefWidth="170.0">
+													<children>
+														<ImageView fx:id="curry008img" fitHeight="200.0" fitWidth="130.0" pickOnBounds="true" preserveRatio="true">
+															<image>
+																<Image url="@../Order/resources/images/menu/curry/beefCurry.jpg" />
+															</image>
+															<VBox.margin>
+																<Insets top="5.0" />
+															</VBox.margin>
+														</ImageView>
+														<Label alignment="CENTER" lineSpacing="2.0" prefHeight="44.0" prefWidth="200.0" text="Beef Curry" textAlignment="CENTER" wrapText="true">
+															<padding>
+																<Insets bottom="5.0" />
+															</padding>
+														</Label>
+														<HBox alignment="CENTER" prefHeight="27.0" prefWidth="200.0">
+															<children>
+																<JFXButton fx:id="curry008remove" alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" prefHeight="22.0" prefWidth="22.0">
+																	<graphic>
+																		<ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+																			<image>
+																				<Image url="Order/resources/images/icon/remove.png" />
+																			</image>
+																		</ImageView>
+																	</graphic>
+																</JFXButton>
+																<Label fx:id="curry008count" alignment="CENTER" prefHeight="39.0" prefWidth="35.0" text="0" textAlignment="CENTER" />
+																<JFXButton fx:id="curry008add" alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="10.0" layoutY="10.0" prefHeight="32.0" prefWidth="35.0">
+																	<graphic>
+																		<ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+																			<image>
+																				<Image url="Order/resources/images/icon/add.png" />
+																			</image>
+																		</ImageView>
+																	</graphic>
+																</JFXButton>
+															</children>
+														</HBox>
+													</children>
+                                       <opaqueInsets>
+                                          <Insets left="5.0" />
+                                       </opaqueInsets>
+												</VBox>
+											</children>
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" top="10.0" />
+                                 </VBox.margin>
+										</HBox>
+										<HBox layoutX="0.0" prefHeight="200.0" prefWidth="200.0">
+											<children>
+												<VBox alignment="CENTER" prefHeight="200.0" prefWidth="170.0">
+													<children>
+														<ImageView fx:id="curry009img" fitHeight="200.0" fitWidth="130.0" pickOnBounds="true" preserveRatio="true">
+															<image>
+																<Image url="@../Order/resources/images/menu/curry/shrimpCurry.jpg" />
+															</image>
+															<VBox.margin>
+																<Insets top="5.0" />
+															</VBox.margin>
+														</ImageView>
+														<Label alignment="CENTER" lineSpacing="2.0" prefHeight="44.0" prefWidth="200.0" text="Shrimp Curry" textAlignment="CENTER" wrapText="true">
+															<padding>
+																<Insets bottom="5.0" />
+															</padding>
+														</Label>
+														<HBox alignment="CENTER" prefHeight="27.0" prefWidth="200.0">
+															<children>
+																<JFXButton fx:id="curry009remove" alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" prefHeight="22.0" prefWidth="22.0">
+																	<graphic>
+																		<ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+																			<image>
+																				<Image url="Order/resources/images/icon/remove.png" />
+																			</image>
+																		</ImageView>
+																	</graphic>
+																</JFXButton>
+																<Label fx:id="curry009count" alignment="CENTER" prefHeight="39.0" prefWidth="35.0" text="0" textAlignment="CENTER" />
+																<JFXButton fx:id="curry009add" alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="10.0" layoutY="10.0" prefHeight="32.0" prefWidth="35.0">
+																	<graphic>
+																		<ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+																			<image>
+																				<Image url="Order/resources/images/icon/add.png" />
+																			</image>
+																		</ImageView>
+																	</graphic>
+																</JFXButton>
+															</children>
+														</HBox>
+													</children>
+												</VBox>
+												<VBox alignment="CENTER" prefHeight="200.0" prefWidth="170.0">
+													<children>
+														<ImageView fx:id="curry010img" fitHeight="200.0" fitWidth="130.0" pickOnBounds="true" preserveRatio="true">
+															<image>
+																<Image url="@../Order/resources/images/menu/curry/seafoodCurry.jpg" />
+															</image>
+															<VBox.margin>
+																<Insets top="5.0" />
+															</VBox.margin>
+														</ImageView>
+														<Label alignment="CENTER" lineSpacing="2.0" prefHeight="44.0" prefWidth="200.0" text="Seafood Curry" textAlignment="CENTER" wrapText="true">
+															<padding>
+																<Insets bottom="5.0" />
+															</padding>
+														</Label>
+														<HBox alignment="CENTER" prefHeight="27.0" prefWidth="200.0">
+															<children>
+																<JFXButton fx:id="curry010remove" alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" prefHeight="22.0" prefWidth="22.0">
+																	<graphic>
+																		<ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+																			<image>
+																				<Image url="Order/resources/images/icon/remove.png" />
+																			</image>
+																		</ImageView>
+																	</graphic>
+																</JFXButton>
+																<Label fx:id="curry010count" alignment="CENTER" prefHeight="39.0" prefWidth="35.0" text="0" textAlignment="CENTER" />
+																<JFXButton fx:id="curry010add" alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="10.0" layoutY="10.0" prefHeight="32.0" prefWidth="35.0">
+																	<graphic>
+																		<ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+																			<image>
+																				<Image url="Order/resources/images/icon/add.png" />
+																			</image>
+																		</ImageView>
+																	</graphic>
+																</JFXButton>
+															</children>
+														</HBox>
+													</children>
+                                       <opaqueInsets>
+                                          <Insets left="5.0" />
+                                       </opaqueInsets>
+												</VBox>
+											</children>
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
+										</HBox>
+									</children>
+								</VBox>
+							</content>
+						</Tab>
+						<Tab fx:id="udonTab" text="카레우동">
+							<content>
+								<VBox prefHeight="1000.0" prefWidth="580.0">
+									<children>
+										<HBox layoutX="20.0" prefHeight="200.0" prefWidth="200.0" spacing="20.0">
+											<children>
+												<VBox alignment="CENTER" prefHeight="200.0" prefWidth="200.0">
+													<HBox.margin>
+														<Insets left="20.0" />
+													</HBox.margin>
+													<children>
+														<ImageView fx:id="udon001img" fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+															<image>
+																<Image url="Order/resources/images/menu/udon/udonPlain.jpg" />
+															</image>
+															<VBox.margin>
+																<Insets top="5.0" />
+															</VBox.margin>
+														</ImageView>
+														<Label alignment="CENTER" lineSpacing="2.0" prefHeight="44.0" prefWidth="200.0" text="Curry Udon Plain" textAlignment="CENTER" wrapText="true">
+															<padding>
+																<Insets bottom="5.0" />
+															</padding>
+														</Label>
+														<HBox alignment="CENTER" prefHeight="27.0" prefWidth="200.0">
+															<children>
+																<JFXButton fx:id="udon001remove" alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" prefHeight="22.0" prefWidth="22.0">
+																	<graphic>
+																		<ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+																			<image>
+																				<Image url="Order/resources/images/icon/remove.png" />
+																			</image>
+																		</ImageView>
+																	</graphic>
+																</JFXButton>
+																<Label fx:id="udon001count" alignment="CENTER" prefHeight="39.0" prefWidth="35.0" text="0" textAlignment="CENTER" />
+																<JFXButton fx:id="udon001add" alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="10.0" layoutY="10.0" prefHeight="32.0" prefWidth="35.0">
+																	<graphic>
+																		<ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+																			<image>
+																				<Image url="Order/resources/images/icon/add.png" />
+																			</image>
+																		</ImageView>
+																	</graphic>
+																</JFXButton>
+															</children>
+														</HBox>
+													</children>
+												</VBox>
+												<VBox alignment="CENTER" prefHeight="200.0" prefWidth="200.0">
+													<children>
+														<ImageView fx:id="udon002img" fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+															<image>
+																<Image url="Order/resources/images/menu/udon/beefUdon.jpg" />
+															</image>
+															<VBox.margin>
+																<Insets top="5.0" />
+															</VBox.margin>
+														</ImageView>
+														<Label alignment="CENTER" lineSpacing="2.0" prefHeight="44.0" prefWidth="200.0" text="Beef Udon" textAlignment="CENTER" wrapText="true">
+															<padding>
+																<Insets bottom="5.0" />
+															</padding>
+														</Label>
+														<HBox alignment="CENTER" prefHeight="27.0" prefWidth="200.0">
+															<children>
+																<JFXButton fx:id="udon002remove" alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" prefHeight="22.0" prefWidth="22.0">
+																	<graphic>
+																		<ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+																			<image>
+																				<Image url="Order/resources/images/icon/remove.png" />
+																			</image>
+																		</ImageView>
+																	</graphic>
+																</JFXButton>
+																<Label fx:id="udon002count" alignment="CENTER" prefHeight="39.0" prefWidth="35.0" text="0" textAlignment="CENTER" />
+																<JFXButton fx:id="udon002add" alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="10.0" layoutY="10.0" prefHeight="32.0" prefWidth="35.0">
+																	<graphic>
+																		<ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+																			<image>
+																				<Image url="Order/resources/images/icon/add.png" />
+																			</image>
+																		</ImageView>
+																	</graphic>
+																</JFXButton>
+															</children>
+														</HBox>
+													</children>
+												</VBox>
+											</children>
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" top="40.0" />
+                                 </VBox.margin>
+										</HBox>
+										<HBox layoutX="0.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" spacing="20.0">
+											<children>
+												<VBox alignment="CENTER" prefHeight="200.0" prefWidth="200.0">
+													<HBox.margin>
+														<Insets left="20.0" />
+													</HBox.margin>
+													<children>
+														<ImageView fx:id="udon003img" fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+															<image>
+																<Image url="Order/resources/images/menu/udon/seafoodUdon.jpg" />
+															</image>
+															<VBox.margin>
+																<Insets top="5.0" />
+															</VBox.margin>
+														</ImageView>
+														<Label alignment="CENTER" lineSpacing="2.0" prefHeight="44.0" prefWidth="200.0" text="Seafood Udon" textAlignment="CENTER" wrapText="true">
+															<padding>
+																<Insets bottom="5.0" />
+															</padding>
+														</Label>
+														<HBox alignment="CENTER" prefHeight="27.0" prefWidth="200.0">
+															<children>
+																<JFXButton fx:id="udon003remove" alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" prefHeight="22.0" prefWidth="22.0">
+																	<graphic>
+																		<ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+																			<image>
+																				<Image url="Order/resources/images/icon/remove.png" />
+																			</image>
+																		</ImageView>
+																	</graphic>
+																</JFXButton>
+																<Label fx:id="udon003count" alignment="CENTER" prefHeight="39.0" prefWidth="35.0" text="0" textAlignment="CENTER" />
+																<JFXButton fx:id="udon003add" alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="10.0" layoutY="10.0" prefHeight="32.0" prefWidth="35.0">
+																	<graphic>
+																		<ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+																			<image>
+																				<Image url="Order/resources/images/icon/add.png" />
+																			</image>
+																		</ImageView>
+																	</graphic>
+																</JFXButton>
+															</children>
+														</HBox>
+													</children>
+												</VBox>
+												<VBox alignment="CENTER" prefHeight="200.0" prefWidth="200.0">
+													<children>
+														<ImageView fx:id="udon004img" fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+															<image>
+																<Image url="Order/resources/images/menu/udon/mushroomUdon.jpg" />
+															</image>
+															<VBox.margin>
+																<Insets top="5.0" />
+															</VBox.margin>
+														</ImageView>
+														<Label alignment="CENTER" lineSpacing="2.0" prefHeight="44.0" prefWidth="200.0" text="Mushroom Udon" textAlignment="CENTER" wrapText="true">
+															<padding>
+																<Insets bottom="5.0" />
+															</padding>
+														</Label>
+														<HBox alignment="CENTER" prefHeight="27.0" prefWidth="200.0">
+															<children>
+																<JFXButton fx:id="udon004remove" alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" prefHeight="22.0" prefWidth="22.0">
+																	<graphic>
+																		<ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+																			<image>
+																				<Image url="Order/resources/images/icon/remove.png" />
+																			</image>
+																		</ImageView>
+																	</graphic>
+																</JFXButton>
+																<Label fx:id="udon004count" alignment="CENTER" prefHeight="39.0" prefWidth="35.0" text="0" textAlignment="CENTER" />
+																<JFXButton fx:id="udon004add" alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="10.0" layoutY="10.0" prefHeight="32.0" prefWidth="35.0">
+																	<graphic>
+																		<ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+																			<image>
+																				<Image url="Order/resources/images/icon/add.png" />
+																			</image>
+																		</ImageView>
+																	</graphic>
+																</JFXButton>
+															</children>
+														</HBox>
+													</children>
+												</VBox>
+											</children>
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" top="10.0" />
+                                 </VBox.margin>
+										</HBox>
+										<HBox layoutX="0.0" layoutY="20.0" prefHeight="200.0" prefWidth="200.0" spacing="20.0">
+											<children>
+												<VBox alignment="CENTER" prefHeight="200.0" prefWidth="200.0">
+													<HBox.margin>
+														<Insets left="20.0" />
+													</HBox.margin>
+													<children>
+														<ImageView fx:id="udon005img" fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+															<image>
+																<Image url="Order/resources/images/menu/udon/chickenUdon.jpg" />
+															</image>
+															<VBox.margin>
+																<Insets top="5.0" />
+															</VBox.margin>
+														</ImageView>
+														<Label alignment="CENTER" lineSpacing="2.0" prefHeight="44.0" prefWidth="200.0" text="Chicken Udon" textAlignment="CENTER" wrapText="true">
+															<padding>
+																<Insets bottom="5.0" />
+															</padding>
+														</Label>
+														<HBox alignment="CENTER" prefHeight="27.0" prefWidth="200.0">
+															<children>
+																<JFXButton fx:id="udon005remove" alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" prefHeight="22.0" prefWidth="22.0">
+																	<graphic>
+																		<ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+																			<image>
+																				<Image url="Order/resources/images/icon/remove.png" />
+																			</image>
+																		</ImageView>
+																	</graphic>
+																</JFXButton>
+																<Label fx:id="udon005count" alignment="CENTER" prefHeight="39.0" prefWidth="35.0" text="0" textAlignment="CENTER" />
+																<JFXButton fx:id="udon005add" alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="10.0" layoutY="10.0" prefHeight="32.0" prefWidth="35.0">
+																	<graphic>
+																		<ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+																			<image>
+																				<Image url="Order/resources/images/icon/add.png" />
+																			</image>
+																		</ImageView>
+																	</graphic>
+																</JFXButton>
+															</children>
+														</HBox>
+													</children>
+												</VBox>
+												<VBox alignment="CENTER" prefHeight="200.0" prefWidth="200.0">
+													<children>
+														<ImageView fx:id="udon006img" fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+															<image>
+																<Image url="Order/resources/images/menu/udon/shrimpUdon.jpg" />
+															</image>
+															<VBox.margin>
+																<Insets top="5.0" />
+															</VBox.margin>
+														</ImageView>
+														<Label alignment="CENTER" lineSpacing="2.0" prefHeight="44.0" prefWidth="200.0" text="Shrimp Udon" textAlignment="CENTER" wrapText="true">
+															<padding>
+																<Insets bottom="5.0" />
+															</padding>
+														</Label>
+														<HBox alignment="CENTER" prefHeight="27.0" prefWidth="200.0">
+															<children>
+																<JFXButton fx:id="udon006remove" alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" prefHeight="22.0" prefWidth="22.0">
+																	<graphic>
+																		<ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+																			<image>
+																				<Image url="Order/resources/images/icon/remove.png" />
+																			</image>
+																		</ImageView>
+																	</graphic>
+																</JFXButton>
+																<Label fx:id="udon006count" alignment="CENTER" prefHeight="39.0" prefWidth="35.0" text="0" textAlignment="CENTER" />
+																<JFXButton fx:id="udon006add" alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="10.0" layoutY="10.0" prefHeight="32.0" prefWidth="35.0">
+																	<graphic>
+																		<ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+																			<image>
+																				<Image url="Order/resources/images/icon/add.png" />
+																			</image>
+																		</ImageView>
+																	</graphic>
+																</JFXButton>
+															</children>
+														</HBox>
+													</children>
+												</VBox>
+											</children>
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" top="10.0" />
+                                 </VBox.margin>
+										</HBox>
+									</children>
+								</VBox>
+							</content>
+						</Tab>
+						<Tab fx:id="pastaTab" text="크림카레파스타">
+							<content>
+								<VBox prefHeight="1000.0" prefWidth="500.0">
+									<children>
+										<HBox layoutX="20.0" prefHeight="200.0" prefWidth="200.0" spacing="20.0">
+											<children>
+												<VBox alignment="CENTER" prefHeight="200.0" prefWidth="200.0">
+													<HBox.margin>
+														<Insets left="20.0" />
+													</HBox.margin>
+													<children>
+														<ImageView fx:id="pasta001img" fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+															<image>
+																<Image url="Order/resources/images/menu/pasta/curryPastaPlain.jpg" />
+															</image>
+															<VBox.margin>
+																<Insets top="5.0" />
+															</VBox.margin>
+														</ImageView>
+														<Label alignment="CENTER" lineSpacing="2.0" prefHeight="44.0" prefWidth="200.0" text="Cream Curry Pasta Plain" textAlignment="CENTER" wrapText="true">
+															<padding>
+																<Insets bottom="5.0" />
+															</padding>
+														</Label>
+														<HBox alignment="CENTER" prefHeight="27.0" prefWidth="200.0">
+															<children>
+																<JFXButton fx:id="pasta001remove" alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" prefHeight="22.0" prefWidth="22.0">
+																	<graphic>
+																		<ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+																			<image>
+																				<Image url="Order/resources/images/icon/remove.png" />
+																			</image>
+																		</ImageView>
+																	</graphic>
+																</JFXButton>
+																<Label fx:id="pasta001count" alignment="CENTER" prefHeight="39.0" prefWidth="35.0" text="0" textAlignment="CENTER" />
+																<JFXButton fx:id="pasta001add" alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="10.0" layoutY="10.0" prefHeight="32.0" prefWidth="35.0">
+																	<graphic>
+																		<ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+																			<image>
+																				<Image url="Order/resources/images/icon/add.png" />
+																			</image>
+																		</ImageView>
+																	</graphic>
+																</JFXButton>
+															</children>
+														</HBox>
+													</children>
+												</VBox>
+												<VBox alignment="CENTER" prefHeight="200.0" prefWidth="200.0">
+													<children>
+														<ImageView fx:id="pasta002img" fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+															<image>
+																<Image url="Order/resources/images/menu/pasta/mushroomCurryPasta.jpg" />
+															</image>
+															<VBox.margin>
+																<Insets top="5.0" />
+															</VBox.margin>
+														</ImageView>
+														<Label alignment="CENTER" lineSpacing="2.0" prefHeight="44.0" prefWidth="200.0" text="Mushroom Cream Curry Pasta" textAlignment="CENTER" wrapText="true">
+															<padding>
+																<Insets bottom="5.0" />
+															</padding>
+														</Label>
+														<HBox alignment="CENTER" prefHeight="27.0" prefWidth="200.0">
+															<children>
+																<JFXButton fx:id="pasta002remove" alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" prefHeight="22.0" prefWidth="22.0">
+																	<graphic>
+																		<ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+																			<image>
+																				<Image url="Order/resources/images/icon/remove.png" />
+																			</image>
+																		</ImageView>
+																	</graphic>
+																</JFXButton>
+																<Label fx:id="pasta002count" alignment="CENTER" prefHeight="39.0" prefWidth="35.0" text="0" textAlignment="CENTER" />
+																<JFXButton fx:id="pasta002add" alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="10.0" layoutY="10.0" prefHeight="32.0" prefWidth="35.0">
+																	<graphic>
+																		<ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+																			<image>
+																				<Image url="Order/resources/images/icon/add.png" />
+																			</image>
+																		</ImageView>
+																	</graphic>
+																</JFXButton>
+															</children>
+														</HBox>
+													</children>
+												</VBox>
+											</children>
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" top="40.0" />
+                                 </VBox.margin>
+										</HBox>
+										<HBox layoutX="0.0" layoutY="15.0" prefHeight="200.0" prefWidth="200.0" spacing="20.0">
+											<children>
+												<VBox alignment="CENTER" prefHeight="200.0" prefWidth="200.0">
+													<HBox.margin>
+														<Insets left="20.0" />
+													</HBox.margin>
+													<children>
+														<ImageView fx:id="pasta003img" fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+															<image>
+																<Image url="Order/resources/images/menu/pasta/chickenCurryPasta.jpg" />
+															</image>
+															<VBox.margin>
+																<Insets top="5.0" />
+															</VBox.margin>
+														</ImageView>
+														<Label alignment="CENTER" lineSpacing="2.0" prefHeight="44.0" prefWidth="200.0" text="Chicken Cream Curry Pasta" textAlignment="CENTER" wrapText="true">
+															<padding>
+																<Insets bottom="5.0" />
+															</padding>
+														</Label>
+														<HBox alignment="CENTER" prefHeight="27.0" prefWidth="200.0">
+															<children>
+																<JFXButton fx:id="pasta003remove" alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" prefHeight="22.0" prefWidth="22.0">
+																	<graphic>
+																		<ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+																			<image>
+																				<Image url="Order/resources/images/icon/remove.png" />
+																			</image>
+																		</ImageView>
+																	</graphic>
+																</JFXButton>
+																<Label fx:id="pasta003count" alignment="CENTER" prefHeight="39.0" prefWidth="35.0" text="0" textAlignment="CENTER" />
+																<JFXButton fx:id="pasta003add" alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="10.0" layoutY="10.0" prefHeight="32.0" prefWidth="35.0">
+																	<graphic>
+																		<ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+																			<image>
+																				<Image url="Order/resources/images/icon/add.png" />
+																			</image>
+																		</ImageView>
+																	</graphic>
+																</JFXButton>
+															</children>
+														</HBox>
+													</children>
+												</VBox>
+												<VBox alignment="CENTER" prefHeight="200.0" prefWidth="200.0">
+													<children>
+														<ImageView fx:id="pasta004img" fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+															<image>
+																<Image url="Order/resources/images/menu/pasta/hamburgCurryPasta.jpg" />
+															</image>
+															<VBox.margin>
+																<Insets top="5.0" />
+															</VBox.margin>
+														</ImageView>
+														<Label alignment="CENTER" lineSpacing="2.0" prefHeight="44.0" prefWidth="200.0" text="Hamburg Cream Curry Pasta" textAlignment="CENTER" wrapText="true">
+															<padding>
+																<Insets bottom="5.0" />
+															</padding>
+														</Label>
+														<HBox alignment="CENTER" prefHeight="27.0" prefWidth="200.0">
+															<children>
+																<JFXButton fx:id="pasta004remove" alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" prefHeight="22.0" prefWidth="22.0">
+																	<graphic>
+																		<ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+																			<image>
+																				<Image url="Order/resources/images/icon/remove.png" />
+																			</image>
+																		</ImageView>
+																	</graphic>
+																</JFXButton>
+																<Label fx:id="pasta004count" alignment="CENTER" prefHeight="39.0" prefWidth="35.0" text="0" textAlignment="CENTER" />
+																<JFXButton fx:id="pasta004add" alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="10.0" layoutY="10.0" prefHeight="32.0" prefWidth="35.0">
+																	<graphic>
+																		<ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+																			<image>
+																				<Image url="Order/resources/images/icon/add.png" />
+																			</image>
+																		</ImageView>
+																	</graphic>
+																</JFXButton>
+															</children>
+														</HBox>
+													</children>
+												</VBox>
+											</children>
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
+										</HBox>
+									</children>
+								</VBox>
+							</content>
+						</Tab>
+						<Tab fx:id="hayashiTab" text="하야시라이스">
+							<content>
+								<VBox prefHeight="1000.0" prefWidth="580.0">
+									<children>
+										<HBox layoutX="20.0" prefHeight="200.0" prefWidth="200.0" spacing="20.0">
+											<children>
+												<VBox alignment="CENTER" prefHeight="200.0" prefWidth="200.0">
+													<HBox.margin>
+														<Insets left="20.0" />
+													</HBox.margin>
+													<children>
+														<ImageView fx:id="hayashi001img" fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+															<image>
+																<Image url="Order/resources/images/menu/hayashi/hayashiRicePlain.jpg" />
+															</image>
+															<VBox.margin>
+																<Insets top="5.0" />
+															</VBox.margin>
+														</ImageView>
+														<Label alignment="CENTER" lineSpacing="2.0" prefHeight="44.0" prefWidth="200.0" text="Hayashirice Plain" textAlignment="CENTER" wrapText="true">
+															<padding>
+																<Insets bottom="5.0" />
+															</padding>
+														</Label>
+														<HBox alignment="CENTER" prefHeight="27.0" prefWidth="200.0">
+															<children>
+																<JFXButton fx:id="hayashi001remove" alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" prefHeight="22.0" prefWidth="22.0">
+																	<graphic>
+																		<ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+																			<image>
+																				<Image url="Order/resources/images/icon/remove.png" />
+																			</image>
+																		</ImageView>
+																	</graphic>
+																</JFXButton>
+																<Label fx:id="hayashi001count" alignment="CENTER" prefHeight="39.0" prefWidth="35.0" text="0" textAlignment="CENTER" />
+																<JFXButton fx:id="hayashi001add" alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="10.0" layoutY="10.0" prefHeight="32.0" prefWidth="35.0">
+																	<graphic>
+																		<ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+																			<image>
+																				<Image url="Order/resources/images/icon/add.png" />
+																			</image>
+																		</ImageView>
+																	</graphic>
+																</JFXButton>
+															</children>
+														</HBox>
+													</children>
+												</VBox>
+												<VBox alignment="CENTER" prefHeight="200.0" prefWidth="200.0">
+													<children>
+														<ImageView fx:id="hayashi002img" fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+															<image>
+																<Image url="Order/resources/images/menu/hayashi/mushroomHayashiRice.jpg" />
+															</image>
+															<VBox.margin>
+																<Insets top="5.0" />
+															</VBox.margin>
+														</ImageView>
+														<Label alignment="CENTER" lineSpacing="2.0" prefHeight="44.0" prefWidth="200.0" text="Mushroom Hayashirice" textAlignment="CENTER" wrapText="true">
+															<padding>
+																<Insets bottom="5.0" />
+															</padding>
+														</Label>
+														<HBox alignment="CENTER" prefHeight="27.0" prefWidth="200.0">
+															<children>
+																<JFXButton fx:id="hayashi002remove" alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" prefHeight="22.0" prefWidth="22.0">
+																	<graphic>
+																		<ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+																			<image>
+																				<Image url="Order/resources/images/icon/remove.png" />
+																			</image>
+																		</ImageView>
+																	</graphic>
+																</JFXButton>
+																<Label fx:id="hayashi002count" alignment="CENTER" prefHeight="39.0" prefWidth="35.0" text="0" textAlignment="CENTER" />
+																<JFXButton fx:id="hayashi002add" alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="10.0" layoutY="10.0" prefHeight="32.0" prefWidth="35.0">
+																	<graphic>
+																		<ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+																			<image>
+																				<Image url="Order/resources/images/icon/add.png" />
+																			</image>
+																		</ImageView>
+																	</graphic>
+																</JFXButton>
+															</children>
+														</HBox>
+													</children>
+												</VBox>
+											</children>
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" top="40.0" />
+                                 </VBox.margin>
+										</HBox>
+										<HBox layoutX="0.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" spacing="20.0">
+											<children>
+												<VBox alignment="CENTER" prefHeight="200.0" prefWidth="200.0">
+													<HBox.margin>
+														<Insets left="20.0" />
+													</HBox.margin>
+													<children>
+														<ImageView fx:id="hayashi003img" fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+															<image>
+																<Image url="Order/resources/images/menu/hayashi/chickenHayashiRice.jpg" />
+															</image>
+															<VBox.margin>
+																<Insets top="5.0" />
+															</VBox.margin>
+														</ImageView>
+														<Label alignment="CENTER" lineSpacing="2.0" prefHeight="44.0" prefWidth="200.0" text="Chicken Hayashirice" textAlignment="CENTER" wrapText="true">
+															<padding>
+																<Insets bottom="5.0" />
+															</padding>
+														</Label>
+														<HBox alignment="CENTER" prefHeight="27.0" prefWidth="200.0">
+															<children>
+																<JFXButton fx:id="hayashi003remove" alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" prefHeight="22.0" prefWidth="22.0">
+																	<graphic>
+																		<ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+																			<image>
+																				<Image url="Order/resources/images/icon/remove.png" />
+																			</image>
+																		</ImageView>
+																	</graphic>
+																</JFXButton>
+																<Label fx:id="hayashi003count" alignment="CENTER" prefHeight="39.0" prefWidth="35.0" text="0" textAlignment="CENTER" />
+																<JFXButton fx:id="hayashi003add" alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="10.0" layoutY="10.0" prefHeight="32.0" prefWidth="35.0">
+																	<graphic>
+																		<ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+																			<image>
+																				<Image url="Order/resources/images/icon/add.png" />
+																			</image>
+																		</ImageView>
+																	</graphic>
+																</JFXButton>
+															</children>
+														</HBox>
+													</children>
+												</VBox>
+												<VBox alignment="CENTER" prefHeight="200.0" prefWidth="200.0">
+													<children>
+														<ImageView fx:id="hayashi004img" fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+															<image>
+																<Image url="Order/resources/images/menu/hayashi/beefHayashiRice.jpg" />
+															</image>
+															<VBox.margin>
+																<Insets top="5.0" />
+															</VBox.margin>
+														</ImageView>
+														<Label alignment="CENTER" lineSpacing="2.0" prefHeight="44.0" prefWidth="200.0" text="Beef Hayashirice" textAlignment="CENTER" wrapText="true">
+															<padding>
+																<Insets bottom="5.0" />
+															</padding>
+														</Label>
+														<HBox alignment="CENTER" prefHeight="27.0" prefWidth="200.0">
+															<children>
+																<JFXButton fx:id="hayashi004remove" alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" prefHeight="22.0" prefWidth="22.0">
+																	<graphic>
+																		<ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+																			<image>
+																				<Image url="Order/resources/images/icon/remove.png" />
+																			</image>
+																		</ImageView>
+																	</graphic>
+																</JFXButton>
+																<Label fx:id="hayashi004count" alignment="CENTER" prefHeight="39.0" prefWidth="35.0" text="0" textAlignment="CENTER" />
+																<JFXButton fx:id="hayashi004add" alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="10.0" layoutY="10.0" prefHeight="32.0" prefWidth="35.0">
+																	<graphic>
+																		<ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+																			<image>
+																				<Image url="Order/resources/images/icon/add.png" />
+																			</image>
+																		</ImageView>
+																	</graphic>
+																</JFXButton>
+															</children>
+														</HBox>
+													</children>
+												</VBox>
+											</children>
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
+										</HBox>
+									</children>
+								</VBox>
+							</content>
+						</Tab>
+						<Tab fx:id="donburryTab" text="돈부리">
+							<content>
+								<VBox prefHeight="1000.0" prefWidth="500.0">
+									<children>
+										<HBox layoutX="20.0" prefHeight="200.0" prefWidth="200.0" spacing="20.0">
+											<children>
+												<VBox alignment="CENTER" prefHeight="200.0" prefWidth="200.0">
+													<HBox.margin>
+														<Insets left="20.0" />
+													</HBox.margin>
+													<children>
+														<ImageView fx:id="donburry001img" fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+															<image>
+																<Image url="Order/resources/images/menu/donburry/sourceDon.jpg" />
+															</image>
+															<VBox.margin>
+																<Insets top="5.0" />
+															</VBox.margin>
+														</ImageView>
+														<Label alignment="CENTER" lineSpacing="2.0" prefHeight="44.0" prefWidth="200.0" text="Source Donburry" textAlignment="CENTER" wrapText="true">
+															<padding>
+																<Insets bottom="5.0" />
+															</padding>
+														</Label>
+														<HBox alignment="CENTER" prefHeight="27.0" prefWidth="200.0">
+															<children>
+																<JFXButton fx:id="donburry001remove" alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" prefHeight="22.0" prefWidth="22.0">
+																	<graphic>
+																		<ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+																			<image>
+																				<Image url="Order/resources/images/icon/remove.png" />
+																			</image>
+																		</ImageView>
+																	</graphic>
+																</JFXButton>
+																<Label fx:id="donburry001count" alignment="CENTER" prefHeight="39.0" prefWidth="35.0" text="0" textAlignment="CENTER" />
+																<JFXButton fx:id="donburry001add" alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="10.0" layoutY="10.0" prefHeight="32.0" prefWidth="35.0">
+																	<graphic>
+																		<ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+																			<image>
+																				<Image url="Order/resources/images/icon/add.png" />
+																			</image>
+																		</ImageView>
+																	</graphic>
+																</JFXButton>
+															</children>
+														</HBox>
+													</children>
+												</VBox>
+												<VBox alignment="CENTER" prefHeight="200.0" prefWidth="200.0">
+													<children>
+														<ImageView fx:id="donburry002img" fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+															<image>
+																<Image url="Order/resources/images/menu/donburry/chickenDon.jpg" />
+															</image>
+															<VBox.margin>
+																<Insets top="5.0" />
+															</VBox.margin>
+														</ImageView>
+														<Label alignment="CENTER" lineSpacing="2.0" prefHeight="44.0" prefWidth="200.0" text="Chicken Mayonnaise Donburry" textAlignment="CENTER" wrapText="true">
+															<padding>
+																<Insets bottom="5.0" />
+															</padding>
+														</Label>
+														<HBox alignment="CENTER" prefHeight="27.0" prefWidth="200.0">
+															<children>
+																<JFXButton fx:id="donburry002remove" alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" prefHeight="22.0" prefWidth="22.0">
+																	<graphic>
+																		<ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+																			<image>
+																				<Image url="Order/resources/images/icon/remove.png" />
+																			</image>
+																		</ImageView>
+																	</graphic>
+																</JFXButton>
+																<Label fx:id="donburry002count" alignment="CENTER" prefHeight="39.0" prefWidth="35.0" text="0" textAlignment="CENTER" />
+																<JFXButton fx:id="donburry002add" alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="10.0" layoutY="10.0" prefHeight="32.0" prefWidth="35.0">
+																	<graphic>
+																		<ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+																			<image>
+																				<Image url="Order/resources/images/icon/add.png" />
+																			</image>
+																		</ImageView>
+																	</graphic>
+																</JFXButton>
+															</children>
+														</HBox>
+													</children>
+												</VBox>
+											</children>
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" top="40.0" />
+                                 </VBox.margin>
+										</HBox>
+										<HBox layoutX="0.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" spacing="20.0">
+											<children>
+												<VBox alignment="CENTER" prefHeight="200.0" prefWidth="200.0">
+													<HBox.margin>
+														<Insets left="20.0" />
+													</HBox.margin>
+													<children>
+														<ImageView fx:id="donburry003img" fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+															<image>
+																<Image url="Order/resources/images/menu/donburry/beefDon.jpg" />
+															</image>
+															<VBox.margin>
+																<Insets top="5.0" />
+															</VBox.margin>
+														</ImageView>
+														<Label alignment="CENTER" lineSpacing="2.0" prefHeight="44.0" prefWidth="200.0" text="Beef Donburry" textAlignment="CENTER" wrapText="true">
+															<padding>
+																<Insets bottom="5.0" />
+															</padding>
+														</Label>
+														<HBox alignment="CENTER" prefHeight="27.0" prefWidth="200.0">
+															<children>
+																<JFXButton fx:id="donburry003remove" alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" prefHeight="22.0" prefWidth="22.0">
+																	<graphic>
+																		<ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+																			<image>
+																				<Image url="Order/resources/images/icon/remove.png" />
+																			</image>
+																		</ImageView>
+																	</graphic>
+																</JFXButton>
+																<Label fx:id="donburry003count" alignment="CENTER" prefHeight="39.0" prefWidth="35.0" text="0" textAlignment="CENTER" />
+																<JFXButton fx:id="donburry003add" alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="10.0" layoutY="10.0" prefHeight="32.0" prefWidth="35.0">
+																	<graphic>
+																		<ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+																			<image>
+																				<Image url="Order/resources/images/icon/add.png" />
+																			</image>
+																		</ImageView>
+																	</graphic>
+																</JFXButton>
+															</children>
+														</HBox>
+													</children>
+												</VBox>
+											</children>
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
+										</HBox>
+									</children>
+								</VBox>
+							</content>
+						</Tab>
+						<Tab fx:id="setTab" text="세트">
+							<content>
+								<VBox prefHeight="1000.0" prefWidth="580.0">
+									<children>
+										<HBox layoutX="20.0" prefHeight="200.0" prefWidth="200.0" spacing="20.0">
+											<children>
+												<VBox alignment="CENTER" prefHeight="200.0" prefWidth="200.0">
+													<HBox.margin>
+														<Insets left="20.0" />
+													</HBox.margin>
+													<children>
+														<ImageView fx:id="set001img" fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+															<image>
+																<Image url="Order/resources/images/menu/set/porkSet.jpg" />
+															</image>
+															<VBox.margin>
+																<Insets top="5.0" />
+															</VBox.margin>
+														</ImageView>
+														<Label alignment="CENTER" lineSpacing="2.0" prefHeight="44.0" prefWidth="200.0" text="Pork Set" textAlignment="CENTER" wrapText="true">
+															<padding>
+																<Insets bottom="5.0" />
+															</padding>
+														</Label>
+														<HBox alignment="CENTER" prefHeight="27.0" prefWidth="200.0">
+															<children>
+																<JFXButton fx:id="set001remove" alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" prefHeight="22.0" prefWidth="22.0">
+																	<graphic>
+																		<ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+																			<image>
+																				<Image url="Order/resources/images/icon/remove.png" />
+																			</image>
+																		</ImageView>
+																	</graphic>
+																</JFXButton>
+																<Label fx:id="set001count" alignment="CENTER" prefHeight="39.0" prefWidth="35.0" text="0" textAlignment="CENTER" />
+																<JFXButton fx:id="set001add" alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="10.0" layoutY="10.0" prefHeight="32.0" prefWidth="35.0">
+																	<graphic>
+																		<ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+																			<image>
+																				<Image url="Order/resources/images/icon/add.png" />
+																			</image>
+																		</ImageView>
+																	</graphic>
+																</JFXButton>
+															</children>
+														</HBox>
+													</children>
+												</VBox>
+												<VBox alignment="CENTER" prefHeight="200.0" prefWidth="200.0">
+													<children>
+														<ImageView fx:id="set002img" fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+															<image>
+																<Image url="Order/resources/images/menu/set/beefSet.jpg" />
+															</image>
+															<VBox.margin>
+																<Insets top="5.0" />
+															</VBox.margin>
+														</ImageView>
+														<Label alignment="CENTER" lineSpacing="2.0" prefHeight="44.0" prefWidth="200.0" text="Beef Set" textAlignment="CENTER" wrapText="true">
+															<padding>
+																<Insets bottom="5.0" />
+															</padding>
+														</Label>
+														<HBox alignment="CENTER" prefHeight="27.0" prefWidth="200.0">
+															<children>
+																<JFXButton fx:id="set002remove" alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" prefHeight="22.0" prefWidth="22.0">
+																	<graphic>
+																		<ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+																			<image>
+																				<Image url="Order/resources/images/icon/remove.png" />
+																			</image>
+																		</ImageView>
+																	</graphic>
+																</JFXButton>
+																<Label fx:id="set002count" alignment="CENTER" prefHeight="39.0" prefWidth="35.0" text="0" textAlignment="CENTER" />
+																<JFXButton fx:id="set002add" alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="10.0" layoutY="10.0" prefHeight="32.0" prefWidth="35.0">
+																	<graphic>
+																		<ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+																			<image>
+																				<Image url="Order/resources/images/icon/add.png" />
+																			</image>
+																		</ImageView>
+																	</graphic>
+																</JFXButton>
+															</children>
+														</HBox>
+													</children>
+												</VBox>
+											</children>
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" top="40.0" />
+                                 </VBox.margin>
+										</HBox>
+										<HBox layoutX="0.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" spacing="20.0">
+											<children>
+												<VBox alignment="CENTER" prefHeight="200.0" prefWidth="200.0">
+													<HBox.margin>
+														<Insets left="20.0" />
+													</HBox.margin>
+													<children>
+														<ImageView fx:id="set003img" fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+															<image>
+																<Image url="Order/resources/images/menu/set/chickenSet.jpg" />
+															</image>
+															<VBox.margin>
+																<Insets top="5.0" />
+															</VBox.margin>
+														</ImageView>
+														<Label alignment="CENTER" lineSpacing="2.0" prefHeight="44.0" prefWidth="200.0" text="Chicken Set" textAlignment="CENTER" wrapText="true">
+															<padding>
+																<Insets bottom="5.0" />
+															</padding>
+														</Label>
+														<HBox alignment="CENTER" prefHeight="27.0" prefWidth="200.0">
+															<children>
+																<JFXButton fx:id="set003remove" alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" prefHeight="22.0" prefWidth="22.0">
+																	<graphic>
+																		<ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+																			<image>
+																				<Image url="Order/resources/images/icon/remove.png" />
+																			</image>
+																		</ImageView>
+																	</graphic>
+																</JFXButton>
+																<Label fx:id="set003count" alignment="CENTER" prefHeight="39.0" prefWidth="35.0" text="0" textAlignment="CENTER" />
+																<JFXButton fx:id="set003add" alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="10.0" layoutY="10.0" prefHeight="32.0" prefWidth="35.0">
+																	<graphic>
+																		<ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+																			<image>
+																				<Image url="Order/resources/images/icon/add.png" />
+																			</image>
+																		</ImageView>
+																	</graphic>
+																</JFXButton>
+															</children>
+														</HBox>
+													</children>
+												</VBox>
+												<VBox alignment="CENTER" prefHeight="200.0" prefWidth="200.0">
+													<children>
+														<ImageView fx:id="set004img" fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+															<image>
+																<Image url="Order/resources/images/menu/set/seafoodSet.jpg" />
+															</image>
+															<VBox.margin>
+																<Insets top="5.0" />
+															</VBox.margin>
+														</ImageView>
+														<Label alignment="CENTER" lineSpacing="2.0" prefHeight="44.0" prefWidth="200.0" text="Seafood Set" textAlignment="CENTER" wrapText="true">
+															<padding>
+																<Insets bottom="5.0" />
+															</padding>
+														</Label>
+														<HBox alignment="CENTER" prefHeight="27.0" prefWidth="200.0">
+															<children>
+																<JFXButton fx:id="set004remove" alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" prefHeight="22.0" prefWidth="22.0">
+																	<graphic>
+																		<ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+																			<image>
+																				<Image url="Order/resources/images/icon/remove.png" />
+																			</image>
+																		</ImageView>
+																	</graphic>
+																</JFXButton>
+																<Label fx:id="set004count" alignment="CENTER" prefHeight="39.0" prefWidth="35.0" text="0" textAlignment="CENTER" />
+																<JFXButton fx:id="set004add" alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="10.0" layoutY="10.0" prefHeight="32.0" prefWidth="35.0">
+																	<graphic>
+																		<ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+																			<image>
+																				<Image url="Order/resources/images/icon/add.png" />
+																			</image>
+																		</ImageView>
+																	</graphic>
+																</JFXButton>
+															</children>
+														</HBox>
+													</children>
+												</VBox>
+											</children>
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" top="10.0" />
+                                 </VBox.margin>
+										</HBox>
+										<HBox layoutX="0.0" layoutY="20.0" prefHeight="200.0" prefWidth="200.0" spacing="20.0">
+											<children>
+												<VBox alignment="CENTER" prefHeight="200.0" prefWidth="200.0">
+													<HBox.margin>
+														<Insets left="20.0" />
+													</HBox.margin>
+													<children>
+														<ImageView fx:id="set005img" fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+															<image>
+																<Image url="Order/resources/images/menu/set/twoPersonSetA.jpg" />
+															</image>
+															<VBox.margin>
+																<Insets top="5.0" />
+															</VBox.margin>
+														</ImageView>
+														<Label alignment="CENTER" lineSpacing="2.0" prefHeight="44.0" prefWidth="200.0" text="ABIKO Two Person Set A" textAlignment="CENTER" wrapText="true">
+															<padding>
+																<Insets bottom="5.0" />
+															</padding>
+														</Label>
+														<HBox alignment="CENTER" prefHeight="27.0" prefWidth="200.0">
+															<children>
+																<JFXButton fx:id="set005remove" alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" prefHeight="22.0" prefWidth="22.0">
+																	<graphic>
+																		<ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+																			<image>
+																				<Image url="Order/resources/images/icon/remove.png" />
+																			</image>
+																		</ImageView>
+																	</graphic>
+																</JFXButton>
+																<Label fx:id="set005count" alignment="CENTER" prefHeight="39.0" prefWidth="35.0" text="0" textAlignment="CENTER" />
+																<JFXButton fx:id="set005add" alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="10.0" layoutY="10.0" prefHeight="32.0" prefWidth="35.0">
+																	<graphic>
+																		<ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+																			<image>
+																				<Image url="Order/resources/images/icon/add.png" />
+																			</image>
+																		</ImageView>
+																	</graphic>
+																</JFXButton>
+															</children>
+														</HBox>
+													</children>
+												</VBox>
+												<VBox alignment="CENTER" prefHeight="200.0" prefWidth="200.0">
+													<children>
+														<ImageView fx:id="set006img" fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+															<image>
+																<Image url="Order/resources/images/menu/set/twoPersonSetB.jpg" />
+															</image>
+															<VBox.margin>
+																<Insets top="5.0" />
+															</VBox.margin>
+														</ImageView>
+														<Label alignment="CENTER" lineSpacing="2.0" prefHeight="44.0" prefWidth="200.0" text="ABIKO Two Person Set B" textAlignment="CENTER" wrapText="true">
+															<padding>
+																<Insets bottom="5.0" />
+															</padding>
+														</Label>
+														<HBox alignment="CENTER" prefHeight="27.0" prefWidth="200.0">
+															<children>
+																<JFXButton fx:id="set006remove" alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" prefHeight="22.0" prefWidth="22.0">
+																	<graphic>
+																		<ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+																			<image>
+																				<Image url="Order/resources/images/icon/remove.png" />
+																			</image>
+																		</ImageView>
+																	</graphic>
+																</JFXButton>
+																<Label fx:id="set006count" alignment="CENTER" prefHeight="39.0" prefWidth="35.0" text="0" textAlignment="CENTER" />
+																<JFXButton fx:id="set006add" alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="10.0" layoutY="10.0" prefHeight="32.0" prefWidth="35.0">
+																	<graphic>
+																		<ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+																			<image>
+																				<Image url="Order/resources/images/icon/add.png" />
+																			</image>
+																		</ImageView>
+																	</graphic>
+																</JFXButton>
+															</children>
+														</HBox>
+													</children>
+												</VBox>
+											</children>
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" top="10.0" />
+                                 </VBox.margin>
+										</HBox>
+										<HBox layoutX="0.0" layoutY="30.0" prefHeight="200.0" prefWidth="200.0" spacing="20.0">
+											<children>
+												<VBox alignment="CENTER" prefHeight="200.0" prefWidth="200.0">
+													<HBox.margin>
+														<Insets left="20.0" />
+													</HBox.margin>
+													<children>
+														<ImageView fx:id="set007img" fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+															<image>
+																<Image url="Order/resources/images/menu/set/kidsSet.jpg" />
+															</image>
+															<VBox.margin>
+																<Insets top="5.0" />
+															</VBox.margin>
+														</ImageView>
+														<Label alignment="CENTER" lineSpacing="2.0" prefHeight="44.0" prefWidth="200.0" text="Kids Set" textAlignment="CENTER" wrapText="true">
+															<padding>
+																<Insets bottom="5.0" />
+															</padding>
+														</Label>
+														<HBox alignment="CENTER" prefHeight="27.0" prefWidth="200.0">
+															<children>
+																<JFXButton fx:id="set007remove" alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" prefHeight="22.0" prefWidth="22.0">
+																	<graphic>
+																		<ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+																			<image>
+																				<Image url="Order/resources/images/icon/remove.png" />
+																			</image>
+																		</ImageView>
+																	</graphic>
+																</JFXButton>
+																<Label fx:id="set007count" alignment="CENTER" prefHeight="39.0" prefWidth="35.0" text="0" textAlignment="CENTER" />
+																<JFXButton fx:id="set007add" alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="10.0" layoutY="10.0" prefHeight="32.0" prefWidth="35.0">
+																	<graphic>
+																		<ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+																			<image>
+																				<Image url="Order/resources/images/icon/add.png" />
+																			</image>
+																		</ImageView>
+																	</graphic>
+																</JFXButton>
+															</children>
+														</HBox>
+													</children>
+												</VBox>
+											</children>
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
+										</HBox>
+									</children>
+								</VBox>
+							</content>
+						</Tab>
+					</tabs>
+				</JFXTabPane>
+				<VBox prefHeight="600.0" prefWidth="320.0">
+					<children>
+						<HBox alignment="CENTER" prefHeight="37.0" prefWidth="318.0">
+							<children>
+								<Label alignment="CENTER" contentDisplay="CENTER" prefHeight="15.0" style="-fx-font-size: 1.5em; -fx-font-weight: bold; -fx-font-family: monospace;" text="Order" textAlignment="CENTER">
+									<HBox.margin>
+										<Insets left="110.0" />
+									</HBox.margin>
+								</Label>
+								<JFXButton fx:id="adminButton" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" onAction="#loginDialog">
+									<HBox.margin>
+										<Insets left="85.0" />
+									</HBox.margin>
+									<graphic>
+										<ImageView fitHeight="20.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+											<image>
+												<Image url="Order/resources/images/icon/settings.png" />
+											</image>
+										</ImageView>
+									</graphic>
+								</JFXButton>
+							</children>
+						</HBox>
+                   <JFXListView fx:id="myOrder" prefHeight="880.0" prefWidth="300.0">
+                     <VBox.margin>
+                        <Insets bottom="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                     </JFXListView>
+						<HBox prefHeight="62.0" prefWidth="300.0" spacing="5.0">
+							<children>
+								<JFXButton fx:id="cancelOrder" buttonType="RAISED" onAction="#orderCancel" prefHeight="62.0" prefWidth="155.0" style="-fx-background-color: black;" stylesheets="@main.css" text="Cancel" />
+								<JFXButton fx:id="orderBtn" buttonType="RAISED" onAction="#orderMenu" prefHeight="67.0" prefWidth="155.0" style="-fx-background-color: #efbd1e;" stylesheets="@main.css" text="Order" />
+							</children>
+							<VBox.margin>
+								<Insets top="5.0" />
+							</VBox.margin>
+						</HBox>
+					</children>
+				</VBox>
+			</children>
+		</HBox>
+	</children>
+</AnchorPane>
