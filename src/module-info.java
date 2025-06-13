@@ -11,5 +11,5 @@ open module thisisjava_appendix_javafx {
     requires org.apache.logging.log4j;
     requires org.apache.logging.log4j.core;
     requires org.apache.commons.codec;
-    requires com.oracle.database.jdbc;
+    requires mysql.connector.j;
 }

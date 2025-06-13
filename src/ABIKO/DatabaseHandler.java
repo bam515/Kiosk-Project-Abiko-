@@ -14,7 +14,7 @@ public class DatabaseHandler {
 	private static DatabaseHandler handler = null;
 	private static boolean initDB = false;
 
-	private static final String DB_URL = "jdbc:oracle:thin:@localhost:1521/XEPDB1";
+	private static final String DB_URL = "jdbc:mysql://localhost:3306/abiko";
 	private static Connection conn = null;
 	private static Statement stmt = null;
 
@@ -37,8 +37,8 @@ public class DatabaseHandler {
 
 	public void createConnection() {
 		try {
-			Class.forName("oracle.jdbc.driver.OracleDriver").newInstance();
-			conn = DriverManager.getConnection(DB_URL, "mytest", "mytest");
+			Class.forName("com.mysql.cj.jdbc.Driver");
+			conn = DriverManager.getConnection(DB_URL, "root", "76001870sb");
 			System.out.println(conn);
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -79,7 +79,7 @@ public class DatabaseHandler {
 				System.out.println("Table " + TABLE_NAME + " already exists. Ready for go!");
 			} else {
 				stmt.execute("CREATE TABLE " + TABLE_NAME + "("
-						+ "     userID NUMBER(5) GENERATED ALWAYS AS IDENTITY PRIMARY KEY,\n"
+						+ "     userID int PRIMARY KEY,\n"
 						+ "     orderID VARCHAR(200),\n" + "     menuID VARCHAR(200),\n" + "     name VARCHAR(200),\n"
 						+ "     price VARCHAR(200),\n" + "     count VARCHAR(200),\n"
 						+ "     orderedTime TIMESTAMP DEFAULT CURRENT_TIMESTAMP,\n"
