@@ -6,8 +6,6 @@ import java.sql.SQLException;
 import java.sql.Timestamp;
 import java.util.ResourceBundle;
 
-import com.jfoenix.controls.JFXButton;
-
 import ABIKO.DatabaseHandler;
 import javafx.application.Platform;
 import javafx.beans.property.SimpleIntegerProperty;
@@ -20,6 +18,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
@@ -30,9 +29,9 @@ public class receiptController implements Initializable {
 	private ObservableList<OrderInfo> orders;
 
 	@FXML
-	private JFXButton homeBtn;
+	private Button homeBtn;
 	@FXML
-	private JFXButton receiptBtn;
+	private Button receiptBtn;
 
 	@FXML
 	private Label orderNum;

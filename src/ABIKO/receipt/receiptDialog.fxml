@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import com.jfoenix.controls.JFXListView?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
+<?import javafx.scene.control.ListView?>
 <AnchorPane prefHeight="600.0" prefWidth="500.0" style="-fx-background-color: white;" xmlns:fx="http://javafx.com/fxml" fx:controller="ABIKO.receipt.receiptDialogController">
    <children>
       <Label layoutX="150.0" layoutY="30.0" text="R E C E I P T">
@@ -14,6 +14,6 @@
       </Label>
       <Label id="orderNumber" layoutX="150.0" layoutY="45.0" >
       </Label>
-      <JFXListView fx:id="receiptDialogList" layoutX="25.0" layoutY="82.0" prefHeight="500.0" prefWidth="450.0" />
+      <ListView fx:id="receiptDialogList" layoutX="25.0" layoutY="82.0" prefHeight="500.0" prefWidth="450.0" />
    </children>
 </AnchorPane>

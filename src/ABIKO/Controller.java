@@ -12,11 +12,6 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.ResourceBundle;
 
-import com.jfoenix.controls.JFXButton;
-import com.jfoenix.controls.JFXListView;
-import com.jfoenix.controls.JFXTabPane;
-import com.jfoenix.effects.JFXDepthManager;
-
 import javafx.application.Platform;
 import javafx.beans.binding.Bindings;
 import javafx.collections.FXCollections;
@@ -31,15 +26,13 @@ import javafx.fxml.Initializable;
 import javafx.geometry.Insets;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Alert;
-import javafx.scene.control.Label;
-import javafx.scene.control.PasswordField;
-import javafx.scene.control.Tab;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
+import javafx.scene.effect.DropShadow;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
+import javafx.scene.paint.Color;
 import javafx.scene.text.TextAlignment;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
@@ -69,25 +62,25 @@ public class Controller implements Initializable {
 	@FXML
 	private ImageView curry010img;
 	@FXML
-	private JFXButton curry001add;
+	private Button curry001add;
 	@FXML
-	private JFXButton curry002add;
+	private Button curry002add;
 	@FXML
-	private JFXButton curry003add;
+	private Button curry003add;
 	@FXML
-	private JFXButton curry004add;
+	private Button curry004add;
 	@FXML
-	private JFXButton curry005add;
+	private Button curry005add;
 	@FXML
-	private JFXButton curry006add;
+	private Button curry006add;
 	@FXML
-	private JFXButton curry007add;
+	private Button curry007add;
 	@FXML
-	private JFXButton curry008add;
+	private Button curry008add;
 	@FXML
-	private JFXButton curry009add;
+	private Button curry009add;
 	@FXML
-	private JFXButton curry010add;
+	private Button curry010add;
 	@FXML
 	private Label curry001count;
 	@FXML
@@ -109,25 +102,25 @@ public class Controller implements Initializable {
 	@FXML
 	private Label curry010count;
 	@FXML
-	private JFXButton curry001remove;
+	private Button curry001remove;
 	@FXML
-	private JFXButton curry002remove;
+	private Button curry002remove;
 	@FXML
-	private JFXButton curry003remove;
+	private Button curry003remove;
 	@FXML
-	private JFXButton curry004remove;
+	private Button curry004remove;
 	@FXML
-	private JFXButton curry005remove;
+	private Button curry005remove;
 	@FXML
-	private JFXButton curry006remove;
+	private Button curry006remove;
 	@FXML
-	private JFXButton curry007remove;
+	private Button curry007remove;
 	@FXML
-	private JFXButton curry008remove;
+	private Button curry008remove;
 	@FXML
-	private JFXButton curry009remove;
+	private Button curry009remove;
 	@FXML
-	private JFXButton curry010remove;
+	private Button curry010remove;
 
 	// udon
 	@FXML
@@ -143,17 +136,17 @@ public class Controller implements Initializable {
 	@FXML
 	private ImageView udon006img;
 	@FXML
-	private JFXButton udon001add;
+	private Button udon001add;
 	@FXML
-	private JFXButton udon002add;
+	private Button udon002add;
 	@FXML
-	private JFXButton udon003add;
+	private Button udon003add;
 	@FXML
-	private JFXButton udon004add;
+	private Button udon004add;
 	@FXML
-	private JFXButton udon005add;
+	private Button udon005add;
 	@FXML
-	private JFXButton udon006add;
+	private Button udon006add;
 	@FXML
 	private Label udon001count;
 	@FXML
@@ -167,17 +160,17 @@ public class Controller implements Initializable {
 	@FXML
 	private Label udon006count;
 	@FXML
-	private JFXButton udon001remove;
+	private Button udon001remove;
 	@FXML
-	private JFXButton udon002remove;
+	private Button udon002remove;
 	@FXML
-	private JFXButton udon003remove;
+	private Button udon003remove;
 	@FXML
-	private JFXButton udon004remove;
+	private Button udon004remove;
 	@FXML
-	private JFXButton udon005remove;
+	private Button udon005remove;
 	@FXML
-	private JFXButton udon006remove;
+	private Button udon006remove;
 
 	// pasta
 	@FXML
@@ -189,13 +182,13 @@ public class Controller implements Initializable {
 	@FXML
 	private ImageView pasta004img;
 	@FXML
-	private JFXButton pasta001add;
+	private Button pasta001add;
 	@FXML
-	private JFXButton pasta002add;
+	private Button pasta002add;
 	@FXML
-	private JFXButton pasta003add;
+	private Button pasta003add;
 	@FXML
-	private JFXButton pasta004add;
+	private Button pasta004add;
 	@FXML
 	private Label pasta001count;
 	@FXML
@@ -205,13 +198,13 @@ public class Controller implements Initializable {
 	@FXML
 	private Label pasta004count;
 	@FXML
-	private JFXButton pasta001remove;
+	private Button pasta001remove;
 	@FXML
-	private JFXButton pasta002remove;
+	private Button pasta002remove;
 	@FXML
-	private JFXButton pasta003remove;
+	private Button pasta003remove;
 	@FXML
-	private JFXButton pasta004remove;
+	private Button pasta004remove;
 
 	// hayashiRice
 	@FXML
@@ -223,13 +216,13 @@ public class Controller implements Initializable {
 	@FXML
 	private ImageView hayashi004img;
 	@FXML
-	private JFXButton hayashi001add;
+	private Button hayashi001add;
 	@FXML
-	private JFXButton hayashi002add;
+	private Button hayashi002add;
 	@FXML
-	private JFXButton hayashi003add;
+	private Button hayashi003add;
 	@FXML
-	private JFXButton hayashi004add;
+	private Button hayashi004add;
 	@FXML
 	private Label hayashi001count;
 	@FXML
@@ -239,13 +232,13 @@ public class Controller implements Initializable {
 	@FXML
 	private Label hayashi004count;
 	@FXML
-	private JFXButton hayashi001remove;
+	private Button hayashi001remove;
 	@FXML
-	private JFXButton hayashi002remove;
+	private Button hayashi002remove;
 	@FXML
-	private JFXButton hayashi003remove;
+	private Button hayashi003remove;
 	@FXML
-	private JFXButton hayashi004remove;
+	private Button hayashi004remove;
 
 	// donburry
 
@@ -256,11 +249,11 @@ public class Controller implements Initializable {
 	@FXML
 	private ImageView donburry003img;
 	@FXML
-	private JFXButton donburry001add;
+	private Button donburry001add;
 	@FXML
-	private JFXButton donburry002add;
+	private Button donburry002add;
 	@FXML
-	private JFXButton donburry003add;
+	private Button donburry003add;
 	@FXML
 	private Label donburry001count;
 	@FXML
@@ -268,11 +261,11 @@ public class Controller implements Initializable {
 	@FXML
 	private Label donburry003count;
 	@FXML
-	private JFXButton donburry001remove;
+	private Button donburry001remove;
 	@FXML
-	private JFXButton donburry002remove;
+	private Button donburry002remove;
 	@FXML
-	private JFXButton donburry003remove;
+	private Button donburry003remove;
 
 	// set
 
@@ -291,19 +284,19 @@ public class Controller implements Initializable {
 	@FXML
 	private ImageView set007img;
 	@FXML
-	private JFXButton set001add;
+	private Button set001add;
 	@FXML
-	private JFXButton set002add;
+	private Button set002add;
 	@FXML
-	private JFXButton set003add;
+	private Button set003add;
 	@FXML
-	private JFXButton set004add;
+	private Button set004add;
 	@FXML
-	private JFXButton set005add;
+	private Button set005add;
 	@FXML
-	private JFXButton set006add;
+	private Button set006add;
 	@FXML
-	private JFXButton set007add;
+	private Button set007add;
 	@FXML
 	private Label set001count;
 	@FXML
@@ -319,23 +312,23 @@ public class Controller implements Initializable {
 	@FXML
 	private Label set007count;
 	@FXML
-	private JFXButton set001remove;
+	private Button set001remove;
 	@FXML
-	private JFXButton set002remove;
+	private Button set002remove;
 	@FXML
-	private JFXButton set003remove;
+	private Button set003remove;
 	@FXML
-	private JFXButton set004remove;
+	private Button set004remove;
 	@FXML
-	private JFXButton set005remove;
+	private Button set005remove;
 	@FXML
-	private JFXButton set006remove;
+	private Button set006remove;
 	@FXML
-	private JFXButton set007remove;
+	private Button set007remove;
 
 	// tab
 	@FXML
-	private JFXTabPane tabContainer;
+	private TabPane tabContainer;
 	@FXML
 	private Tab curryTab;
 	@FXML
@@ -354,16 +347,16 @@ public class Controller implements Initializable {
 
 	// orderList
 	@FXML
-	public JFXListView<String> myOrder;
+	public ListView<String> myOrder;
 
 	@FXML
-	private JFXButton cancelOrder;
+	private Button cancelOrder;
 
 	@FXML
-	private JFXButton orderBtn;
+	private Button orderBtn;
 
 	@FXML
-	private JFXButton adminButton;
+	private Button adminButton;
 
 	@FXML
 	private Label lblStatus;
@@ -565,17 +558,24 @@ public class Controller implements Initializable {
 		orderList = new ArrayList<>();
 		countMap = FXCollections.observableHashMap();
 
+		DropShadow shadow = new DropShadow();
+		shadow.setRadius(5.0);
+		shadow.setOffsetX(3.0);
+		shadow.setOffsetY(3.0);
+		shadow.setColor(Color.color(0, 0, 0, 0.3));
+
 		// curry
-		JFXDepthManager.setDepth(curry001img, 1);
-		JFXDepthManager.setDepth(curry002img, 1);
-		JFXDepthManager.setDepth(curry003img, 1);
-		JFXDepthManager.setDepth(curry004img, 1);
-		JFXDepthManager.setDepth(curry005img, 1);
-		JFXDepthManager.setDepth(curry006img, 1);
-		JFXDepthManager.setDepth(curry007img, 1);
-		JFXDepthManager.setDepth(curry008img, 1);
-		JFXDepthManager.setDepth(curry009img, 1);
-		JFXDepthManager.setDepth(curry010img, 1);
+		curry001img.setEffect(shadow);
+		curry002img.setEffect(shadow);
+		curry003img.setEffect(shadow);
+		curry004img.setEffect(shadow);
+		curry005img.setEffect(shadow);
+		curry006img.setEffect(shadow);
+		curry007img.setEffect(shadow);
+		curry008img.setEffect(shadow);
+		curry009img.setEffect(shadow);
+		curry010img.setEffect(shadow);
+
 		curry001add.setOnAction(e -> increaseCount("curry001"));
 		curry002add.setOnAction(e -> increaseCount("curry002"));
 		curry003add.setOnAction(e -> increaseCount("curry003"));
@@ -608,12 +608,13 @@ public class Controller implements Initializable {
 		curry010count.textProperty().bind(Bindings.valueAt(countMap, "curry010"));
 
 		// udon
-		JFXDepthManager.setDepth(udon001img, 1);
-		JFXDepthManager.setDepth(udon002img, 1);
-		JFXDepthManager.setDepth(udon003img, 1);
-		JFXDepthManager.setDepth(udon004img, 1);
-		JFXDepthManager.setDepth(udon005img, 1);
-		JFXDepthManager.setDepth(udon006img, 1);
+		udon001img.setEffect(shadow);
+		udon002img.setEffect(shadow);
+		udon003img.setEffect(shadow);
+		udon004img.setEffect(shadow);
+		udon005img.setEffect(shadow);
+		udon006img.setEffect(shadow);
+
 		udon001add.setOnAction(e -> increaseCount("udon001"));
 		udon002add.setOnAction(e -> increaseCount("udon002"));
 		udon003add.setOnAction(e -> increaseCount("udon003"));
@@ -634,10 +635,11 @@ public class Controller implements Initializable {
 		udon006count.textProperty().bind(Bindings.valueAt(countMap, "udon006"));
 
 		// pasta
-		JFXDepthManager.setDepth(pasta001img, 1);
-		JFXDepthManager.setDepth(pasta002img, 1);
-		JFXDepthManager.setDepth(pasta003img, 1);
-		JFXDepthManager.setDepth(pasta004img, 1);
+		pasta001img.setEffect(shadow);
+		pasta002img.setEffect(shadow);
+		pasta003img.setEffect(shadow);
+		pasta004img.setEffect(shadow);
+
 		pasta001add.setOnAction(e -> increaseCount("pasta001"));
 		pasta002add.setOnAction(e -> increaseCount("pasta002"));
 		pasta003add.setOnAction(e -> increaseCount("pasta003"));
@@ -652,10 +654,11 @@ public class Controller implements Initializable {
 		pasta004count.textProperty().bind(Bindings.valueAt(countMap, "pasta004"));
 
 		// hayashiRice
-		JFXDepthManager.setDepth(hayashi001img, 1);
-		JFXDepthManager.setDepth(hayashi002img, 1);
-		JFXDepthManager.setDepth(hayashi003img, 1);
-		JFXDepthManager.setDepth(hayashi004img, 1);
+		hayashi001img.setEffect(shadow);
+		hayashi002img.setEffect(shadow);
+		hayashi003img.setEffect(shadow);
+		hayashi004img.setEffect(shadow);
+
 		hayashi001add.setOnAction(e -> increaseCount("hayashiRice001"));
 		hayashi002add.setOnAction(e -> increaseCount("hayashiRice002"));
 		hayashi003add.setOnAction(e -> increaseCount("hayashiRice003"));
@@ -670,9 +673,10 @@ public class Controller implements Initializable {
 		hayashi004count.textProperty().bind(Bindings.valueAt(countMap, "hayashiRice004"));
 
 		// donburry
-		JFXDepthManager.setDepth(donburry001img, 1);
-		JFXDepthManager.setDepth(donburry002img, 1);
-		JFXDepthManager.setDepth(donburry003img, 1);
+		donburry001img.setEffect(shadow);
+		donburry002img.setEffect(shadow);
+		donburry003img.setEffect(shadow);
+
 		donburry001add.setOnAction(e -> increaseCount("donburry001"));
 		donburry002add.setOnAction(e -> increaseCount("donburry002"));
 		donburry003add.setOnAction(e -> increaseCount("donburry003"));
@@ -684,13 +688,14 @@ public class Controller implements Initializable {
 		donburry003count.textProperty().bind(Bindings.valueAt(countMap, "donburry003"));
 
 		// set
-		JFXDepthManager.setDepth(set001img, 1);
-		JFXDepthManager.setDepth(set002img, 1);
-		JFXDepthManager.setDepth(set003img, 1);
-		JFXDepthManager.setDepth(set004img, 1);
-		JFXDepthManager.setDepth(set005img, 1);
-		JFXDepthManager.setDepth(set006img, 1);
-		JFXDepthManager.setDepth(set007img, 1);
+		set001img.setEffect(shadow);
+		set002img.setEffect(shadow);
+		set003img.setEffect(shadow);
+		set004img.setEffect(shadow);
+		set005img.setEffect(shadow);
+		set006img.setEffect(shadow);
+		set007img.setEffect(shadow);
+
 		set001add.setOnAction(e -> increaseCount("set001"));
 		set002add.setOnAction(e -> increaseCount("set002"));
 		set003add.setOnAction(e -> increaseCount("set003"));

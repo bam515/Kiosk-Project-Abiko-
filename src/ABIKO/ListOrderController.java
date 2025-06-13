@@ -10,8 +10,6 @@ import java.text.DateFormatSymbols;
 import java.util.HashMap;
 import java.util.ResourceBundle;
 
-import com.jfoenix.controls.JFXButton;
-
 import javafx.beans.property.SimpleIntegerProperty;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.collections.FXCollections;
@@ -23,6 +21,7 @@ import javafx.scene.chart.LineChart;
 import javafx.scene.chart.PieChart;
 import javafx.scene.chart.PieChart.Data;
 import javafx.scene.chart.XYChart;
+import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
@@ -38,7 +37,7 @@ public class ListOrderController implements Initializable {
     private PieChart pieChart;
 
     @FXML
-    private JFXButton loadChart;
+    private Button loadChart;
 
     @FXML
     private LineChart<String, Number> lineChart;

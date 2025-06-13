@@ -10,8 +10,6 @@ import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.ResourceBundle;
 
-import com.jfoenix.controls.JFXListView;
-
 import ABIKO.Controller;
 import ABIKO.DatabaseHandler;
 import javafx.beans.property.SimpleIntegerProperty;
@@ -21,11 +19,12 @@ import javafx.collections.ObservableList;
 import javafx.collections.ObservableMap;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.ListView;
 
 public class receiptDialogController extends Controller implements Initializable {
 
 	@FXML
-	public JFXListView<String> receiptDialogList = myOrder;
+	public ListView<String> receiptDialogList = myOrder;
 	
 	private static DatabaseHandler databaseHandler;
 	private static ArrayList<Order> orderListRe = orderList;
